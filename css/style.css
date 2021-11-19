@@ -241,12 +241,14 @@ input::placeholder {
 }
 
 footer {
+  position: relative;
+  margin: 0 auto;
+}
+
+.container-footer {
   position: absolute;
+  width: 100%;
   bottom: 0;
-  margin-top: 3px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .attribution {

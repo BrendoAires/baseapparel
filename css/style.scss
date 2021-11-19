@@ -228,16 +228,23 @@ input::placeholder{
     
     font-size: 12px;
 }
+
 footer{
+    position: relative;
+    margin: 0 auto;
+   
+    
+}
+.container-footer{
     position: absolute;
+    width: 100%;
     bottom: 0;
-    margin-top: 3px;
-    justify-content: center;
 }
 
 .attribution { 
     font-size: 11px; 
-    text-align: center; 
+    text-align: center;
+     
 }
 .attribution a { 
     color: var(--clr-1); 

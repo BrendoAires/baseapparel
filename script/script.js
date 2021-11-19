@@ -17,6 +17,7 @@ function validarEmail(emailCapturadoDoFormulario){
         
         document.getElementById("msgErro").style.display = "none";
         document.getElementById("email").value = "";
+        alert("Email cadastrado com sucesso")
         return true;
 
     } else{
