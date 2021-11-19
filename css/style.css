@@ -44,6 +44,7 @@ p {
 
 body {
   max-height: calc(100vh -80px);
+  min-height: 100vh;
   line-height: 1.5;
   font-size: var(--fs-16);
   background-image: var(--gra-1);
