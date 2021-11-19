@@ -208,10 +208,8 @@ input::placeholder {
   left: 76.33333%;
   position: absolute;
   border: none;
-  -webkit-transition: -webkit-filter 2s linear;
-  transition: -webkit-filter 2s linear;
-  transition: filter 2s linear;
-  transition: filter 2s linear, -webkit-filter 2s linear;
+  -webkit-transition: all 3s ease;
+  transition: all 3s ease;
 }
 
 #button:hover {
@@ -243,6 +241,8 @@ input::placeholder {
 }
 
 footer {
+  position: absolute;
+  bottom: 0;
   margin-top: 3px;
 }
 
