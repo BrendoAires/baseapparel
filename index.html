@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="/css/style.css" rel="stylesheet">
+  
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    
+  </style>
+</head>
+<body class="flex">
+
+  <header class="container brand flex">
+    
+      <div id="circulo"></div>
+
+      <div class="p flex">
+        <p>BASE</p>
+        <p>APPAREL</p>
+      </div>
+
+  </header>
+
+  <img src="/img/hero-mobile.jpg" class="capa"></img>
+<div class="titulo">
+  <h1><span> We're </span> coming soon</h1>
+</div>
+
+  <article class="container">
+   <p> 
+     Hello fellow shoppers! We're currently building our new fashion store. 
+     Add your email below to stay up-to-date with announcements and our launch deals.
+   </p>
+
+  <form class="flex">
+    <input type="text" onfocus="limpaErro()" class="email " name="email" id="email" placeholder="Email Address">
+    <input type="button" id="button" class="enviar" value=">" >
+    <div id="msgErro">
+     <span>
+      Please provide a valid email
+    </span>
+    </div>
+  </form>
+  
+
+  </article> 
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.github.com/BrendoAires">Brendo Aires</a>.
+    </p>
+  </footer>
+
+  <script src="/script/script.js">
+    
+  </script>
+</body>
+</html>
