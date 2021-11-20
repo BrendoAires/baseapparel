@@ -194,7 +194,7 @@ input::placeholder{
     left:76.33333%;
     position: absolute;
     border: none;
-    transition: all 3s ease;
+    transition: all 1s ease;
     
 }
 
@@ -230,16 +230,13 @@ input::placeholder{
 }
 
 footer{
-    position: relative;
-    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+
    
     
 }
-.container-footer{
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-}
+
 
 .attribution { 
     font-size: 11px; 
