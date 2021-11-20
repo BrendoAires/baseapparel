@@ -208,8 +208,8 @@ input::placeholder {
   left: 76.33333%;
   position: absolute;
   border: none;
-  -webkit-transition: all .6s ease;
-  transition: all .6s ease;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
 }
 
 #button:hover {
@@ -243,6 +243,7 @@ input::placeholder {
 footer {
   position: absolute;
   bottom: 0;
+  left: 7%;
 }
 
 .attribution {
