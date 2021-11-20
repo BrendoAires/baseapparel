@@ -208,8 +208,8 @@ input::placeholder {
   left: 76.33333%;
   position: absolute;
   border: none;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
 }
 
 #button:hover {
