@@ -120,7 +120,10 @@ a{
 
 .capa{
     width: 100%;
+    background-image: url("/img/hero-mobile.jpg");
     min-width: 375px;
+    
+   background-repeat: no-repeat;
 }
 
 .titulo{
@@ -232,7 +235,7 @@ input::placeholder{
 footer{
     position: absolute;
     bottom: 0;
-    left:7%;
+    left:15%;
 
    
     
@@ -246,4 +249,34 @@ footer{
 }
 .attribution a { 
     color: var(--clr-1); 
+}
+
+@media (min-width:1440px){
+    body{
+        flex-direction: row;
+        
+        min-width: 1440px;
+        max-width: 1440px;
+        height: calc(100vh-80px);
+
+    }
+    header{
+        width: 1440px;
+        border: 1px solid red;
+    }
+ 
+
+
+    .capa{
+        background-image: url("/img/hero-desktop.jpg");
+        
+    }
+
+
+}
+@media (min-width: 375px){
+    .capa{
+       
+        
+    }
 }
