@@ -28,6 +28,7 @@ function validarEmail(emailCapturadoDoFormulario){
         document.getElementById("msgErro").style.display = "block"; 
         
         return false;
+        
 
     }
 

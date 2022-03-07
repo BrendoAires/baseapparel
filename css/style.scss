@@ -11,16 +11,16 @@ h2,
 p{
     margin: 0;
 }
-@media (prefers-reduced-motion: reduce){
-    *,
-    *::before,
-    *::after{
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
-}
+// @media (prefers-reduced-motion: reduce){
+//     *,
+//     *::before,
+//     *::after{
+//         animation-duration: 0.01ms !important;
+//         animation-iteration-count: 1 !important;
+//         transition-duration: 0.01ms !important;
+//         scroll-behavior: auto !important;
+//     }
+// }
 
 :root{
 
@@ -120,10 +120,9 @@ a{
 
 .capa{
     width: 100%;
-    background-image: url("/img/hero-mobile.jpg");
-    min-width: 375px;
     
-   background-repeat: no-repeat;
+    
+    
 }
 
 .titulo{
@@ -150,6 +149,7 @@ article{
     color: var(--clr-1);
     font-size: 14px;
     line-height: 25px;
+    
    
 }
 article p{
@@ -188,25 +188,25 @@ input::placeholder{
     height: 50px;
     
 }
-#button{
+.enviar{
     background: var(--gra-2);
     font-size: 20px;
     color: white;
-    //286.25
     width: 18.67%;    
     left:76.33333%;
     position: absolute;
     border: none;
-    transition: all .4s ease;
+    transition: .2s;
+    
+        &:hover{
+            filter:brightness(120%);
+            box-shadow: 5px 5px 5px 0 gray;
+            transform: scale(1.1); 
+            
+        }
     
 }
 
-#button:hover{
-    filter:brightness(120%);
-    box-shadow: 5px 5px 5px 0 gray;
-    transform: scale(1.1); 
-    
-}
 
 .inputerro[name="email"]{
     text-align: right;
@@ -233,9 +233,9 @@ input::placeholder{
 }
 
 footer{
-    position: absolute;
+    position: relative;
     bottom: 0;
-    left:15%;
+    width: 100%;
 
    
     
@@ -245,13 +245,17 @@ footer{
 .attribution { 
     font-size: 11px; 
     text-align: center;
+    position: absolute;
+
+    a{
+        color: var(--clr-1); 
+        bottom: 0;
+    }
      
 }
-.attribution a { 
-    color: var(--clr-1); 
-}
 
-@media (min-width:1440px){
+
+@media (min-width: 1000px) and (max-width: 1440px){
     body{
         flex-direction: row;
         
@@ -265,18 +269,13 @@ footer{
         border: 1px solid red;
     }
  
-
+    .capa{display: none;}
 
     .capa{
         background-image: url("/img/hero-desktop.jpg");
-        
+        display: block;
     }
+    
 
 
-}
-@media (min-width: 375px){
-    .capa{
-       
-        
-    }
 }
